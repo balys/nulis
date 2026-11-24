@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.agent/
+# Rollout output: workspaces, logs and records. Held-out records must never be committed
+# where a proposer can read them.
+runs/
+# Local rig settings and the harness config mounted into rollouts.
+rig.toml
+harness-config/
