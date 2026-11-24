@@ -1,0 +1,9 @@
+# A smoke task: it needs no library at all, so it checks the pipeline, not the model.
+[task]
+id = "example-slug-0001"
+library = "example"
+image = "python:3.12-slim"
+entry = "solution.py"
+test_cmd = "python -m unittest discover -s tests -q"
+agent_timeout_sec = 600
+grade_timeout_sec = 60
